@@ -10,61 +10,10 @@ body {
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
-  background: #e6e6e6;
-  /* color: #fff; */
 }
 
 .parent {
-  text-align: center;
-}
-.progress-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  width: 500px;
-  margin-bottom: 18px;
-  position: relative;
-  /* background: green; */
-}
-
-.progress {
-  background: #09e009;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  height: 3px;
-  width: 0%;
-  z-index: ;
-  transition: all 0.4s ease;
-}
-
-.progress-container::before {
-  content: "";
-  background: #b2b2b2;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  height: 3px;
-  width: 100%;
-  z-index: -1;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-}
-
-.parent {
+  /* background: red; */
   padding: 10px;
   text-align: center;
 }
@@ -130,16 +79,3 @@ body {
   border: none;
 }
 
-.circle {
-  background: #ffffff;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  display: grid;
-  place-items: center;
-  border: 3px solid #b2b2b2;
-  transition: all 0.3s ease;
-}
-
-.active {
-}
