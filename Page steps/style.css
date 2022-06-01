@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background: #e6e6e6;
+  /* color: #fff; */
+}
+
+.parent {
+  text-align: center;
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  width: 500px;
+  margin-bottom: 18px;
+  position: relative;
+  /* background: green; */
+}
+
+.progress {
+  background: #09e009;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: ;
+  transition: all 0.4s ease;
+}
+
+.progress-container::before {
+  content: "";
+  background: #b2b2b2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 3px;
+  width: 100%;
+  z-index: -1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.parent {
+  padding: 10px;
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.progress-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 100%;
+  background: red;
+  z-index: -1;
+}
+
+.progress-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 50%;
+  background: #06c406;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.circle {
+  background: #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+  border: 2px solid red;
+  color: red;
+}
+
+.active {
+  border: 2px solid #06c406;
+  color: #06c406;
+}
+
+.btn {
+  background: #06c406;
+  color: #fff;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 100px;
+  margin: 10px;
+  outline: none;
+  border: none;
+}
+
+.circle {
+  background: #ffffff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+  border: 3px solid #b2b2b2;
+  transition: all 0.3s ease;
+}
+
+.active {
+}
